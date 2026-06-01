@@ -29,49 +29,74 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
   --color-panel: var(--panel);
+  --color-ink: var(--ink);
+  --color-ember: var(--ember);
+  --color-leaf: var(--leaf);
   --font-display: var(--font-display);
   --font-body: var(--font-body);
+  --font-script: var(--font-script);
   --radius-panel: var(--radius-panel);
 }
 
 :root {
-  --radius: 0.7rem;
-  --radius-panel: 0.95rem;
+  --radius: 0.6rem;
+  --radius-panel: 1.1rem;
 
-  --background: oklch(0.16 0.045 151);
-  --foreground: oklch(0.95 0.02 95);
-  --card: oklch(0.205 0.04 151);
-  --card-foreground: oklch(0.95 0.02 95);
-  --popover: oklch(0.205 0.04 151);
-  --popover-foreground: oklch(0.95 0.02 95);
+  /* Warm ivory canvas with deep forest ink and copper ember accents */
+  --background: oklch(0.97 0.018 85);
+  --foreground: oklch(0.22 0.035 150);
+  --ink: oklch(0.22 0.035 150);
 
-  --primary: oklch(0.74 0.16 83);
-  --primary-foreground: oklch(0.16 0.045 151);
-  --secondary: oklch(0.24 0.035 151);
-  --secondary-foreground: oklch(0.95 0.02 95);
-  --muted: oklch(0.27 0.03 151);
-  --muted-foreground: oklch(0.78 0.03 92);
-  --accent: oklch(0.78 0.17 84);
-  --accent-foreground: oklch(0.17 0.04 151);
-  --destructive: oklch(0.62 0.21 28);
-  --destructive-foreground: oklch(0.97 0.01 95);
-  --border: oklch(0.42 0.05 151 / 58%);
-  --input: oklch(0.3 0.035 151);
-  --ring: oklch(0.76 0.16 84);
-  --panel: oklch(0.19 0.04 151 / 88%);
+  --card: oklch(0.99 0.012 90);
+  --card-foreground: oklch(0.22 0.035 150);
+  --popover: oklch(0.99 0.012 90);
+  --popover-foreground: oklch(0.22 0.035 150);
 
-  --font-display: "Cormorant Garamond", ui-serif, Georgia, serif;
-  --font-body: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --primary: oklch(0.32 0.055 150);
+  --primary-foreground: oklch(0.97 0.018 85);
+  --secondary: oklch(0.93 0.022 85);
+  --secondary-foreground: oklch(0.22 0.035 150);
+  --muted: oklch(0.92 0.018 85);
+  --muted-foreground: oklch(0.42 0.025 145);
+  --accent: oklch(0.58 0.16 48);
+  --accent-foreground: oklch(0.98 0.015 85);
+  --ember: oklch(0.58 0.16 48);
+  --leaf: oklch(0.32 0.055 150);
 
-  --gradient-gold: linear-gradient(135deg, oklch(0.8 0.17 84), oklch(0.68 0.14 76));
-  --shadow-panel: 0 22px 56px -22px oklch(0.02 0 0 / 0.65);
-  --shadow-panel-soft: 0 12px 36px -20px oklch(0.02 0 0 / 0.45);
-  --hero-overlay: linear-gradient(90deg, oklch(0.12 0.03 151 / 0.95) 0%, oklch(0.14 0.03 151 / 0.86) 42%, oklch(0.16 0.03 151 / 0.22) 72%, oklch(0.16 0.03 151 / 0.04) 100%);
+  --destructive: oklch(0.55 0.21 28);
+  --destructive-foreground: oklch(0.98 0.015 85);
+  --border: oklch(0.32 0.04 150 / 14%);
+  --input: oklch(0.88 0.02 85);
+  --ring: oklch(0.58 0.16 48);
+  --panel: oklch(0.99 0.012 90 / 92%);
+
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-body: "Inter Tight", ui-sans-serif, system-ui, sans-serif;
+  --font-script: "Caveat", ui-serif, cursive;
+
+  --gradient-ember: linear-gradient(135deg, oklch(0.62 0.17 50), oklch(0.5 0.16 38));
+  --gradient-leaf: linear-gradient(180deg, oklch(0.34 0.06 150), oklch(0.26 0.05 150));
+  --shadow-panel: 0 30px 70px -32px oklch(0.2 0.03 150 / 0.35);
+  --shadow-panel-soft: 0 14px 40px -22px oklch(0.2 0.03 150 / 0.22);
+  --hero-overlay: linear-gradient(180deg, oklch(0.97 0.018 85 / 0) 0%, oklch(0.97 0.018 85 / 0.6) 60%, oklch(0.97 0.018 85 / 0.95) 100%);
+  --noise-mask: radial-gradient(circle at 20% 0%, oklch(0.58 0.16 48 / 0.08), transparent 40%),
+                radial-gradient(circle at 90% 10%, oklch(0.32 0.055 150 / 0.07), transparent 35%);
 }
 
 .dark {
-  --background: oklch(0.16 0.045 151);
-  --foreground: oklch(0.95 0.02 95);
+  --background: oklch(0.17 0.025 150);
+  --foreground: oklch(0.96 0.015 85);
+  --card: oklch(0.21 0.03 150);
+  --card-foreground: oklch(0.96 0.015 85);
+  --primary: oklch(0.78 0.12 78);
+  --primary-foreground: oklch(0.17 0.025 150);
+  --secondary: oklch(0.24 0.03 150);
+  --muted: oklch(0.26 0.025 150);
+  --muted-foreground: oklch(0.74 0.025 90);
+  --accent: oklch(0.7 0.16 50);
+  --accent-foreground: oklch(0.17 0.025 150);
+  --border: oklch(0.96 0.015 85 / 12%);
+  --panel: oklch(0.21 0.03 150 / 88%);
 }
 
 @layer base {
@@ -85,8 +110,7 @@
 
   body {
     background:
-      radial-gradient(circle at top left, oklch(0.22 0.05 151 / 0.55), transparent 28%),
-      radial-gradient(circle at top right, oklch(0.3 0.06 90 / 0.14), transparent 24%),
+      var(--noise-mask),
       var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-body);
@@ -94,56 +118,62 @@
     text-rendering: optimizeLegibility;
   }
 
-  h1,
-  h2,
-  h3,
-  h4 {
+  h1, h2, h3, h4 {
     font-family: var(--font-display);
-    letter-spacing: 0;
+    font-weight: 500;
+    letter-spacing: -0.015em;
   }
 
-  img {
-    display: block;
+  img { display: block; }
+
+  ::selection {
+    background: var(--ember);
+    color: var(--accent-foreground);
   }
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .text-balance { text-wrap: balance; }
+  .bg-hero-overlay { background: var(--hero-overlay); }
+  .bg-noise { background: var(--noise-mask); }
+  .rounded-panel { border-radius: var(--radius-panel); }
+  .bg-panel { background-color: var(--panel); }
+  .bg-ink { background-color: var(--ink); }
+  .text-ink { color: var(--ink); }
+  .bg-ember { background-color: var(--ember); }
+  .text-ember { color: var(--ember); }
+  .bg-leaf { background-color: var(--leaf); }
+  .text-leaf { color: var(--leaf); }
+  .bg-gradient-ember { background: var(--gradient-ember); }
+  .bg-gradient-leaf { background: var(--gradient-leaf); }
+  .shadow-panel { box-shadow: var(--shadow-panel); }
+  .shadow-panel-soft { box-shadow: var(--shadow-panel-soft); }
+  .font-display { font-family: var(--font-display); }
+  .font-script { font-family: var(--font-script); }
+
+  .eyebrow {
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.28em;
+    color: var(--ember);
   }
 
-  .bg-hero-overlay {
-    background: var(--hero-overlay);
-  }
-
-  .rounded-panel {
-    border-radius: var(--radius-panel);
-  }
-
-  .bg-panel {
-    background-color: var(--panel);
-  }
-
-  .shadow-panel {
-    box-shadow: var(--shadow-panel);
-  }
-
-  .shadow-panel-soft {
-    box-shadow: var(--shadow-panel-soft);
+  .divider-dot::before {
+    content: "·";
+    margin: 0 0.5rem;
+    color: var(--ember);
   }
 
   @keyframes rise {
-    from {
-      opacity: 0;
-      transform: translateY(18px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
   }
+  .animate-rise { animation: rise 0.85s cubic-bezier(0.22, 1, 0.36, 1) both; }
 
-  .animate-rise {
-    animation: rise 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
+  @keyframes ember-pulse {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 1; }
   }
+  .animate-ember { animation: ember-pulse 3.2s ease-in-out infinite; }
 }
