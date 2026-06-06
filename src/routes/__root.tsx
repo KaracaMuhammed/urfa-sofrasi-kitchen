@@ -77,13 +77,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Urfa Sofrası — Anatolian kitchen" },
+      { title: "Urfa Sofrası — Anatolische keuken" },
       {
         name: "description",
         content:
-          "Urfa Sofrası — pides, lahmacun, grillades and Turkish desserts served in a warm Anatolian dining room.",
+          "Urfa Sofrası — pides, lahmacun, schotels en Turkse desserts in een warme, groen-gouden eetzaal.",
       },
-      { name: "theme-color", content: "#3b1414" },
+      { name: "theme-color", content: "#1f3a26" },
       { property: "og:site_name", content: "Urfa Sofrası" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -95,7 +95,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@context": "https://schema.org",
           "@type": "Restaurant",
           name: "Urfa Sofrası",
-          servesCuisine: ["Turkish", "Anatolian"],
+          servesCuisine: ["Turks", "Anatolisch"],
           priceRange: "$$",
           url: "/",
         }),
@@ -107,10 +107,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter+Tight:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap",
       },
     ],
   }),
+
   shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
