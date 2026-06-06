@@ -40,48 +40,49 @@
 
 :root {
   --radius: 0.6rem;
-  --radius-panel: 1.1rem;
+  --radius-panel: 1.25rem;
 
-  /* Warm ivory canvas with deep forest ink and copper ember accents */
-  --background: oklch(0.97 0.018 85);
-  --foreground: oklch(0.22 0.035 150);
-  --ink: oklch(0.22 0.035 150);
+  /* Warm cream canvas, deep burgundy ink, saffron-gold accents */
+  --background: oklch(0.965 0.022 78);
+  --foreground: oklch(0.22 0.045 28);
+  --ink: oklch(0.24 0.07 25);
 
-  --card: oklch(0.99 0.012 90);
-  --card-foreground: oklch(0.22 0.035 150);
-  --popover: oklch(0.99 0.012 90);
-  --popover-foreground: oklch(0.22 0.035 150);
+  --card: oklch(0.99 0.014 82);
+  --card-foreground: oklch(0.22 0.045 28);
+  --popover: oklch(0.99 0.014 82);
+  --popover-foreground: oklch(0.22 0.045 28);
 
-  --primary: oklch(0.32 0.055 150);
-  --primary-foreground: oklch(0.97 0.018 85);
-  --secondary: oklch(0.93 0.022 85);
-  --secondary-foreground: oklch(0.22 0.035 150);
-  --muted: oklch(0.92 0.018 85);
-  --muted-foreground: oklch(0.42 0.025 145);
-  --accent: oklch(0.58 0.16 48);
-  --accent-foreground: oklch(0.98 0.015 85);
-  --ember: oklch(0.58 0.16 48);
-  --leaf: oklch(0.32 0.055 150);
+  --primary: oklch(0.36 0.13 22);
+  --primary-foreground: oklch(0.97 0.022 82);
+  --secondary: oklch(0.93 0.028 75);
+  --secondary-foreground: oklch(0.24 0.07 25);
+  --muted: oklch(0.92 0.022 75);
+  --muted-foreground: oklch(0.42 0.04 28);
+  --accent: oklch(0.74 0.16 72);
+  --accent-foreground: oklch(0.22 0.07 28);
+  --ember: oklch(0.6 0.2 32);
+  --leaf: oklch(0.46 0.11 145);
 
-  --destructive: oklch(0.55 0.21 28);
-  --destructive-foreground: oklch(0.98 0.015 85);
-  --border: oklch(0.32 0.04 150 / 14%);
-  --input: oklch(0.88 0.02 85);
-  --ring: oklch(0.58 0.16 48);
-  --panel: oklch(0.99 0.012 90 / 92%);
+  --destructive: oklch(0.55 0.22 28);
+  --destructive-foreground: oklch(0.98 0.015 82);
+  --border: oklch(0.36 0.08 25 / 16%);
+  --input: oklch(0.88 0.022 78);
+  --ring: oklch(0.6 0.2 32);
+  --panel: oklch(0.99 0.014 82 / 92%);
 
   --font-display: "Fraunces", ui-serif, Georgia, serif;
   --font-body: "Inter Tight", ui-sans-serif, system-ui, sans-serif;
   --font-script: "Caveat", ui-serif, cursive;
 
-  --gradient-ember: linear-gradient(135deg, oklch(0.62 0.17 50), oklch(0.5 0.16 38));
-  --gradient-leaf: linear-gradient(180deg, oklch(0.34 0.06 150), oklch(0.26 0.05 150));
-  --shadow-panel: 0 30px 70px -32px oklch(0.2 0.03 150 / 0.35);
-  --shadow-panel-soft: 0 14px 40px -22px oklch(0.2 0.03 150 / 0.22);
-  --hero-overlay: linear-gradient(180deg, oklch(0.97 0.018 85 / 0) 0%, oklch(0.97 0.018 85 / 0.6) 60%, oklch(0.97 0.018 85 / 0.95) 100%);
-  --noise-mask: radial-gradient(circle at 20% 0%, oklch(0.58 0.16 48 / 0.08), transparent 40%),
-                radial-gradient(circle at 90% 10%, oklch(0.32 0.055 150 / 0.07), transparent 35%);
+  --gradient-ember: linear-gradient(135deg, oklch(0.68 0.2 50), oklch(0.5 0.2 28));
+  --gradient-leaf: linear-gradient(180deg, oklch(0.36 0.13 22), oklch(0.24 0.07 25));
+  --shadow-panel: 0 30px 70px -28px oklch(0.24 0.07 25 / 0.4);
+  --shadow-panel-soft: 0 14px 40px -22px oklch(0.24 0.07 25 / 0.25);
+  --hero-overlay: linear-gradient(180deg, oklch(0.22 0.07 25 / 0) 0%, oklch(0.22 0.07 25 / 0.55) 55%, oklch(0.22 0.07 25 / 0.92) 100%);
+  --noise-mask: radial-gradient(circle at 18% 0%, oklch(0.74 0.16 72 / 0.14), transparent 42%),
+                radial-gradient(circle at 92% 8%, oklch(0.6 0.2 32 / 0.1), transparent 38%);
 }
+
 
 .dark {
   --background: oklch(0.17 0.025 150);
