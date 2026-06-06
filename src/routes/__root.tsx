@@ -83,7 +83,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content:
           "Urfa Sofrası — pides, lahmacun, grillades and Turkish desserts served in a warm Anatolian dining room.",
       },
-      { name: "theme-color", content: "#1a2e22" },
+      { name: "theme-color", content: "#3b1414" },
       { property: "og:site_name", content: "Urfa Sofrası" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
