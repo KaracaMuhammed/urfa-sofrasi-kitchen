@@ -2,10 +2,10 @@ import { Link } from "@tanstack/react-router";
 import logoAsset from "@/assets/urfa-logo.png.asset.json";
 
 const nav = [
-  { to: "/", label: "Home" },
-  { to: "/menu", label: "Menu" },
-  { to: "/about", label: "Story" },
-  { to: "/contact", label: "Visit" },
+  { to: "/", label: "Thuis" },
+  { to: "/menu", label: "Menukaart" },
+  { to: "/about", label: "Verhaal" },
+  { to: "/contact", label: "Bezoek" },
 ];
 
 export function SiteHeader() {
@@ -24,7 +24,7 @@ export function SiteHeader() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-8 text-sm font-medium text-primary-foreground/70 md:flex">
+        <nav className="hidden items-center gap-8 text-sm font-medium text-primary-foreground/75 md:flex">
           {nav.map((item) => (
             <Link
               key={item.to}
@@ -42,10 +42,9 @@ export function SiteHeader() {
           to="/contact"
           className="rounded-full bg-accent px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.22em] text-accent-foreground transition hover:brightness-110"
         >
-          Reserve
+          Reserveren
         </Link>
       </div>
     </header>
   );
 }
-
