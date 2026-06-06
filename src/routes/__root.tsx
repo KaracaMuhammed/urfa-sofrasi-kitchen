@@ -87,6 +87,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "Urfa Sofrası" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "Urfa Sofrası — Anatolische keuken" },
+      { name: "twitter:title", content: "Urfa Sofrası — Anatolische keuken" },
+      { name: "description", content: "Urfa Sofrasi Showcase is a restaurant website displaying menu, images, and contact information." },
+      { property: "og:description", content: "Urfa Sofrasi Showcase is a restaurant website displaying menu, images, and contact information." },
+      { name: "twitter:description", content: "Urfa Sofrasi Showcase is a restaurant website displaying menu, images, and contact information." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/845d90df-c1b8-4705-af69-1a5c1e33db6d/id-preview-0219ea68--f9db6065-e5dd-424a-859d-14e7de5de228.lovable.app-1780780875956.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/845d90df-c1b8-4705-af69-1a5c1e33db6d/id-preview-0219ea68--f9db6065-e5dd-424a-859d-14e7de5de228.lovable.app-1780780875956.png" },
     ],
     scripts: [
       {
