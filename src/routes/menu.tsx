@@ -1,6 +1,12 @@
+import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import {
+  Dialog,
+  DialogContent,
+  DialogTitle,
+} from "@/components/ui/dialog";
 import menuPage1 from "@/assets/menu-page-1.png.asset.json";
 import menuPage2 from "@/assets/menu-page-2.png.asset.json";
 
@@ -72,6 +78,9 @@ const sections: Section[] = [
 ];
 
 function MenuPage() {
+  const [activeImage, setActiveImage] = useState<string | null>(null);
+  const [activeAlt, setActiveAlt] = useState<string>("");
+
   return (
     <div className="min-h-screen">
       <SiteHeader />
@@ -131,15 +140,27 @@ function MenuPage() {
                 het complete plaatje wil zien.
               </p>
             </div>
-            <div className="flex flex-col gap-10">
-              <figure className="overflow-hidden rounded-panel border border-border shadow-panel">
+            <div className="flex flex-col gap-4">
+              <figure
+                className="cursor-zoom-in overflow-hidden rounded-panel border border-border shadow-panel"
+                onClick={() => {
+                  setActiveImage(menuPage1.url);
+                  setActiveAlt("Menukaart Urfa Sofrası — pizza's, schotels, kapsalon, frietjes, pasta's, salades en aperitief");
+                }}
+              >
                 <img
                   src={menuPage1.url}
                   alt="Menukaart Urfa Sofrası — pizza's, schotels, kapsalon, frietjes, pasta's, salades en aperitief"
                   className="w-full"
                 />
               </figure>
-              <figure className="overflow-hidden rounded-panel border border-border shadow-panel">
+              <figure
+                className="cursor-zoom-in overflow-hidden rounded-panel border border-border shadow-panel"
+                onClick={() => {
+                  setActiveImage(menuPage2.url);
+                  setActiveAlt("Menukaart Urfa Sofrası — pides, lahmacun, kiremit ovenschotels, broodjes/dürüm, dranken en dessert");
+                }}
+              >
                 <img
                   src={menuPage2.url}
                   alt="Menukaart Urfa Sofrası — pides, lahmacun, kiremit ovenschotels, broodjes/dürüm, dranken en dessert"
@@ -151,6 +172,20 @@ function MenuPage() {
           </div>
         </section>
       </main>
+
+      <Dialog open={!!activeImage} onOpenChange={(open) => !open && setActiveImage(null)}>
+        <DialogContent className="max-h-[95vh] max-w-[95vw] border-none bg-transparent p-0 shadow-none data-[state=open]:zoom-in-95">
+          <DialogTitle className="sr-only">{activeAlt}</DialogTitle>
+          {activeImage && (
+            <img
+              src={activeImage}
+              alt={activeAlt}
+              className="max-h-[90vh] max-w-full rounded-panel object-contain"
+            />
+          )}
+        </DialogContent>
+      </Dialog>
+
       <SiteFooter />
     </div>
   );
