@@ -82,7 +82,7 @@ function ContactPage() {
           <div className="mx-auto mt-10 max-w-5xl rounded-panel bg-ink p-10 text-center text-primary-foreground shadow-panel">
             <p className="font-display text-3xl italic text-accent">Buyurun.</p>
             <h2 className="mt-3 font-display text-3xl sm:text-4xl">
-              Reserveringen vanaf 4 personen
+              Reserveringen
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-primary-foreground/70">
               Bel ons op <a href="tel:035010610" className="underline hover:text-accent">03 501 06 10</a> of loop binnen — we
