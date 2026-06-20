@@ -51,13 +51,18 @@ function ContactPage() {
             <div className="rounded-panel border border-border bg-card p-8 shadow-panel-soft">
               <p className="eyebrow">Adres</p>
               <p className="mt-4 font-display text-2xl text-ink">Urfa Sofrası</p>
-              <p className="mt-1 text-muted-foreground">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Dokter+Persoonslaan+13,+2830+Willebroek"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-1 block text-muted-foreground underline underline-offset-4 hover:text-ember"
+              >
                 Dokter Persoonslaan 13<br />
                 2830 Willebroek
-              </p>
+              </a>
               <p className="mt-6 eyebrow">Contact</p>
               <p className="mt-3 text-ink">
-                <a href="tel:035010610" className="hover:text-ember">03 501 06 10</a>
+                <a href="tel:035010610" className="underline underline-offset-4 hover:text-ember">03 501 06 10</a>
               </p>
             </div>
 
