@@ -1,8 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
-import interiorAsset from "@/assets/urfa-interior.png.asset.json";
-import exteriorAsset from "@/assets/urfa-exterior.png.asset.json";
+import interiorAsset from "@/assets/urfa-interior-new.png.asset.json";
+import exteriorAsset from "@/assets/urfa-exterior-new.png.asset.json";
 
 export const Route = createFileRoute("/about")({
   head: () => ({

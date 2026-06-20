@@ -4,7 +4,7 @@ import logoAsset from "@/assets/urfa-logo.png.asset.json";
 export function SiteFooter() {
   return (
     <footer className="border-t border-border bg-ink text-primary-foreground">
-      <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:px-8 md:grid-cols-[1.2fr_1fr_1fr]">
+      <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:px-8 md:grid-cols-[1.2fr_1fr_1fr_1fr]">
         <div>
           <img src={logoAsset.url} alt="Urfa Sofrası" className="h-12 w-auto" />
           <p className="mt-5 max-w-sm text-sm leading-7 text-primary-foreground/70">
@@ -18,7 +18,7 @@ export function SiteFooter() {
 
         <div>
           <p className="eyebrow text-accent">Bezoek</p>
-          <ul className="mt-4 space-y-2 text-sm">
+          <ul className="mt-4 space-y-2 text-sm text-primary-foreground/80">
             <li>Dokter Persoonslaan 13</li>
             <li>2830 Willebroek</li>
             <li><a href="tel:035010610" className="hover:text-accent">03 501 06 10</a></li>
@@ -26,8 +26,19 @@ export function SiteFooter() {
         </div>
 
         <div>
+          <p className="eyebrow text-accent">Openingstijden</p>
+          <ul className="mt-4 space-y-1.5 text-sm text-primary-foreground/80">
+            <li className="flex justify-between gap-4"><span>Ma – di</span><span>11:00 – 23:00</span></li>
+            <li className="flex justify-between gap-4"><span>Wo</span><span>Gesloten</span></li>
+            <li className="flex justify-between gap-4"><span>Do</span><span>11:00 – 23:00</span></li>
+            <li className="flex justify-between gap-4"><span>Vr – za</span><span>11:00 – 00:00</span></li>
+            <li className="flex justify-between gap-4"><span>Zo</span><span>14:00 – 22:00</span></li>
+          </ul>
+        </div>
+
+        <div>
           <p className="eyebrow text-accent">Ontdek</p>
-          <ul className="mt-4 space-y-2 text-sm">
+          <ul className="mt-4 space-y-2 text-sm text-primary-foreground/80">
             <li><Link to="/menu" className="hover:text-accent">Menukaart</Link></li>
             <li><Link to="/about" className="hover:text-accent">Ons verhaal</Link></li>
             <li><Link to="/contact" className="hover:text-accent">Bestellen</Link></li>
