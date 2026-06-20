@@ -80,14 +80,14 @@ function ContactPage() {
               Reserveringen vanaf 4 personen
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-primary-foreground/70">
-              Stuur ons een bericht met datum, tijd en aantal gasten — we
+              Bel ons op <a href="tel:035010610" className="underline hover:text-accent">03 501 06 10</a> of loop binnen — we
               bevestigen binnen enkele uren.
             </p>
             <a
-              href="mailto:hello@urfasofrasi.example?subject=Reservering"
+              href="tel:035010610"
               className="mt-7 inline-flex rounded-full bg-accent px-7 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-accent-foreground transition hover:brightness-110"
             >
-              Tafel aanvragen
+              Bel nu
             </a>
           </div>
         </section>
