@@ -19,9 +19,9 @@ export function SiteFooter() {
         <div>
           <p className="eyebrow text-accent">Bezoek</p>
           <ul className="mt-4 space-y-2 text-sm">
-            <li>Elke dag open</li>
-            <li>11:30 — 23:00</li>
-            <li>Dine-in · Afhaal</li>
+            <li>Dokter Persoonslaan 13</li>
+            <li>2830 Willebroek</li>
+            <li><a href="tel:035010610" className="hover:text-accent">03 501 06 10</a></li>
           </ul>
         </div>
 
