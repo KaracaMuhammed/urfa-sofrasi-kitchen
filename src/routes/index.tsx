@@ -88,39 +88,11 @@ function Index() {
                 </Link>
               </div>
 
-              <dl className="mt-12 grid grid-cols-1 gap-6 border-t border-border pt-8 sm:grid-cols-2 lg:grid-cols-4">
-                <div className="sm:col-span-2">
-                  <dt className="eyebrow">Openingsuren</dt>
-                  <dd className="mt-3 grid grid-cols-2 gap-x-6 gap-y-1 text-sm">
-                    <div className="flex justify-between gap-2">
-                      <span className="text-muted-foreground">Maandag</span>
-                      <span className="text-ink">11:00 – 23:00</span>
-                    </div>
-                    <div className="flex justify-between gap-2">
-                      <span className="text-muted-foreground">Dinsdag</span>
-                      <span className="text-ink">11:00 – 23:00</span>
-                    </div>
-                    <div className="flex justify-between gap-2">
-                      <span className="text-muted-foreground">Woensdag</span>
-                      <span className="text-ember">Gesloten</span>
-                    </div>
-                    <div className="flex justify-between gap-2">
-                      <span className="text-muted-foreground">Donderdag</span>
-                      <span className="text-ink">11:00 – 23:00</span>
-                    </div>
-                    <div className="flex justify-between gap-2">
-                      <span className="text-muted-foreground">Vrijdag</span>
-                      <span className="text-ink">11:00 – 00:00</span>
-                    </div>
-                    <div className="flex justify-between gap-2">
-                      <span className="text-muted-foreground">Zaterdag</span>
-                      <span className="text-ink">11:00 – 00:00</span>
-                    </div>
-                    <div className="flex justify-between gap-2">
-                      <span className="text-muted-foreground">Zondag</span>
-                      <span className="text-ink">14:00 – 22:00</span>
-                    </div>
-                  </dd>
+              <dl className="mt-12 grid grid-cols-3 gap-6 border-t border-border pt-8 text-sm">
+                <div>
+                  <dt className="eyebrow">Open</dt>
+                  <dd className="mt-2 font-display text-2xl text-ink">Di – zo</dd>
+                  <dd className="mt-1 text-xs text-muted-foreground">gesloten op woensdag</dd>
                 </div>
                 <div>
                   <dt className="eyebrow">Stijl</dt>
