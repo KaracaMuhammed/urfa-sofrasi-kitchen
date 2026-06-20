@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import exteriorAsset from "@/assets/urfa-exterior-new.png.asset.json";
-import interiorAsset from "@/assets/urfa-interior.png.asset.json";
+import interiorAsset from "@/assets/urfa-interior-new.png.asset.json";
 import foodMixAsset from "@/assets/urfa-food-mix.png.asset.json";
 import foodLahmacunAsset from "@/assets/urfa-food-lahmacun.png.asset.json";
 import foodPideAsset from "@/assets/urfa-food-pide.png.asset.json";
