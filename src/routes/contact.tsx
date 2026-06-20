@@ -19,15 +19,6 @@ export const Route = createFileRoute("/contact")({
   component: ContactPage,
 });
 
-const hours = [
-  ["Maandag", "11:00 – 23:00"],
-  ["Dinsdag", "11:00 – 23:00"],
-  ["Woensdag", "Gesloten"],
-  ["Donderdag", "11:00 – 23:00"],
-  ["Vrijdag", "11:00 – 00:00"],
-  ["Zaterdag", "11:00 – 00:00"],
-  ["Zondag", "14:00 – 22:00"],
-];
 
 function ContactPage() {
   return (
@@ -67,15 +58,9 @@ function ContactPage() {
             </div>
 
             <div className="rounded-panel border border-border bg-card p-8 shadow-panel-soft">
-              <p className="eyebrow">Openingstijden</p>
-              <ul className="mt-4 divide-y divide-border">
-                {hours.map(([day, time]) => (
-                  <li key={day} className="flex justify-between py-2.5 text-sm">
-                    <span className="text-ink">{day}</span>
-                    <span className="text-muted-foreground">{time}</span>
-                  </li>
-                ))}
-              </ul>
+              <p className="eyebrow">Open</p>
+              <p className="mt-4 font-display text-3xl text-ink">Di – zo</p>
+              <p className="mt-2 text-muted-foreground">elke dag behalve woensdag</p>
             </div>
           </div>
 

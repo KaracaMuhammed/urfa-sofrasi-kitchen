@@ -92,6 +92,7 @@ function Index() {
                 <div>
                   <dt className="eyebrow">Open</dt>
                   <dd className="mt-2 font-display text-2xl text-ink">Di – zo</dd>
+                  <dd className="mt-1 text-xs text-muted-foreground">elke dag behalve woensdag</dd>
                 </div>
                 <div>
                   <dt className="eyebrow">Stijl</dt>
