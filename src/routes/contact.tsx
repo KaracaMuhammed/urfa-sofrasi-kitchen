@@ -59,14 +59,14 @@ function ContactPage() {
 
             <div className="rounded-panel border border-border bg-card p-8 shadow-panel-soft">
               <p className="eyebrow">Openingsuren</p>
-              <ul className="mt-4 space-y-1 text-sm text-foreground/80">
-                <li className="flex justify-between"><span>Maandag</span> <span>11:00 – 23:00</span></li>
-                <li className="flex justify-between"><span>Dinsdag</span> <span>11:00 – 23:00</span></li>
-                <li className="flex justify-between"><span>Woensdag</span> <span>Gesloten</span></li>
-                <li className="flex justify-between"><span>Donderdag</span> <span>11:00 – 23:00</span></li>
-                <li className="flex justify-between"><span>Vrijdag</span> <span>11:00 – 00:00</span></li>
-                <li className="flex justify-between"><span>Zaterdag</span> <span>11:00 – 00:00</span></li>
-                <li className="flex justify-between"><span>Zondag</span> <span>14:00 – 22:00</span></li>
+              <ul className="mt-6 space-y-0 text-sm text-foreground/80">
+                <li className="flex justify-between border-b border-border/60 py-3.5"><span>Maandag</span> <span>11:00 – 23:00</span></li>
+                <li className="flex justify-between border-b border-border/60 py-3.5"><span>Dinsdag</span> <span>11:00 – 23:00</span></li>
+                <li className="flex justify-between border-b border-border/60 py-3.5"><span>Woensdag</span> <span className="text-muted-foreground">Gesloten</span></li>
+                <li className="flex justify-between border-b border-border/60 py-3.5"><span>Donderdag</span> <span>11:00 – 23:00</span></li>
+                <li className="flex justify-between border-b border-border/60 py-3.5"><span>Vrijdag</span> <span>11:00 – 00:00</span></li>
+                <li className="flex justify-between border-b border-border/60 py-3.5"><span>Zaterdag</span> <span>11:00 – 00:00</span></li>
+                <li className="flex justify-between py-3.5"><span>Zondag</span> <span>14:00 – 22:00</span></li>
               </ul>
             </div>
           </div>
