@@ -35,8 +35,8 @@ export function SiteFooter() {
 
         <div>
           <p className="eyebrow text-accent">Open</p>
-          <p className="mt-4 font-display text-2xl text-primary-foreground">Di – zo</p>
-          <p className="mt-1 text-sm text-primary-foreground/70">elke dag behalve woensdag</p>
+          <p className="mt-3 font-display text-2xl text-primary-foreground">Di – zo</p>
+          <p className="mt-0.5 text-sm text-primary-foreground/60">gesloten op woensdag</p>
         </div>
 
         <div>
