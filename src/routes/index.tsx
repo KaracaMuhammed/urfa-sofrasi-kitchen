@@ -89,7 +89,7 @@ function Index() {
               <dl className="mt-12 grid grid-cols-3 gap-6 border-t border-border pt-8 text-sm">
                 <div>
                   <dt className="eyebrow">Open</dt>
-                  <dd className="mt-2 font-display text-2xl text-ink">Do - Di</dd>
+                  <dd className="mt-2 font-display text-2xl text-ink">Do – Di</dd>
                   {/* <dd className="mt-1 text-xs text-muted-foreground">gesloten op woensdag</dd> */}
                 </div>
                 <div>
