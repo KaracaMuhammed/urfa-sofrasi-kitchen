@@ -39,9 +39,9 @@ function ContactPage() {
 
         <section className="px-5 pb-20 sm:px-8 lg:pb-28">
           <div className="mx-auto grid max-w-5xl gap-6 md:grid-cols-2">
-            <div className="rounded-panel border border-border bg-card p-8 shadow-panel-soft">
+            <div className="rounded-panel border border-border bg-card p-6 shadow-panel-soft self-start">
               <p className="eyebrow">Adres</p>
-              <p className="mt-4 font-display text-2xl text-ink">Urfa Sofrası</p>
+              <p className="mt-2 font-display text-2xl text-ink">Urfa Sofrası</p>
               <a
                 href="https://www.google.com/maps/search/?api=1&query=Dokter+Persoonslaan+13,+2830+Willebroek"
                 target="_blank"
@@ -51,8 +51,8 @@ function ContactPage() {
                 Dokter Persoonslaan 13<br />
                 2830 Willebroek
               </a>
-              <p className="mt-6 eyebrow">Contact</p>
-              <p className="mt-3 text-ink">
+              <p className="mt-4 eyebrow">Contact</p>
+              <p className="mt-1 text-ink">
                 <a href="tel:035010610" className="underline underline-offset-4 hover:text-ember">03 501 06 10</a>
               </p>
             </div>
