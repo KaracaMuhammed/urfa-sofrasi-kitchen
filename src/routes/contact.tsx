@@ -58,9 +58,16 @@ function ContactPage() {
             </div>
 
             <div className="rounded-panel border border-border bg-card p-8 shadow-panel-soft">
-              <p className="eyebrow">Open</p>
-              <p className="mt-4 font-display text-3xl text-ink">Di – zo</p>
-              <p className="mt-1 text-sm text-muted-foreground">gesloten op woensdag</p>
+              <p className="eyebrow">Openingsuren</p>
+              <ul className="mt-4 space-y-1 text-sm text-primary-foreground/60">
+                <li className="flex justify-between"><span>Maandag</span> <span>11:00 – 23:00</span></li>
+                <li className="flex justify-between"><span>Dinsdag</span> <span>11:00 – 23:00</span></li>
+                <li className="flex justify-between"><span>Woensdag</span> <span>Gesloten</span></li>
+                <li className="flex justify-between"><span>Donderdag</span> <span>11:00 – 23:00</span></li>
+                <li className="flex justify-between"><span>Vrijdag</span> <span>11:00 – 00:00</span></li>
+                <li className="flex justify-between"><span>Zaterdag</span> <span>11:00 – 00:00</span></li>
+                <li className="flex justify-between"><span>Zondag</span> <span>14:00 – 22:00</span></li>
+              </ul>
             </div>
           </div>
 
