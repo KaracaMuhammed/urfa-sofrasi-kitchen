@@ -208,17 +208,17 @@ function Index() {
           <div className="mx-auto flex max-w-5xl flex-col items-center text-center">
             <p className="font-display text-3xl italic text-accent">Buyurun.</p>
             <h2 className="mt-4 font-display text-4xl sm:text-5xl">
-              Reserveer een plek — de oven brandt al.
+              Bestel nu — de oven brandt al.
             </h2>
             <p className="mt-5 max-w-xl text-primary-foreground/70">
-              Reserveren is eenvoudig: bel, mail, of loop gewoon binnen. We
-              vinden een plek voor je.
+              Bestellen is eenvoudig: bel, mail, of loop gewoon binnen. We
+              zorgen dat alles klaarstaat.
             </p>
             <Link
               to="/contact"
               className="mt-9 rounded-full bg-accent px-7 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-accent-foreground transition hover:brightness-110"
             >
-              Tafel reserveren
+              Nu bestellen
             </Link>
           </div>
         </section>
