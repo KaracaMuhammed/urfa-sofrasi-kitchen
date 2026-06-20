@@ -59,7 +59,7 @@ function ContactPage() {
 
             <div className="rounded-panel border border-border bg-card p-8 shadow-panel-soft">
               <p className="eyebrow">Openingsuren</p>
-              <ul className="mt-4 space-y-1 text-sm text-primary-foreground/60">
+              <ul className="mt-4 space-y-1 text-sm text-foreground/80">
                 <li className="flex justify-between"><span>Maandag</span> <span>11:00 – 23:00</span></li>
                 <li className="flex justify-between"><span>Dinsdag</span> <span>11:00 – 23:00</span></li>
                 <li className="flex justify-between"><span>Woensdag</span> <span>Gesloten</span></li>
