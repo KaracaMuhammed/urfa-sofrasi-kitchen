@@ -9,7 +9,7 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Openingstijden, adres en reservering voor Urfa Sofrası. Elke dag open voor dine-in en afhaal.",
+          "Openingstijden, adres en reservering voor Urfa Sofrası in Willebroek. Dine-in en afhaal.",
       },
       { property: "og:title", content: "Bezoek & reserveren — Urfa Sofrası" },
       { property: "og:url", content: "/contact" },
