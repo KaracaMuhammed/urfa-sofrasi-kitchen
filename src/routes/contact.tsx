@@ -60,7 +60,7 @@ function ContactPage() {
             <div className="rounded-panel border border-border bg-card p-8 shadow-panel-soft">
               <p className="eyebrow">Open</p>
               <p className="mt-4 font-display text-3xl text-ink">Di – zo</p>
-              <p className="mt-2 text-muted-foreground">elke dag behalve woensdag</p>
+              <p className="mt-1 text-sm text-muted-foreground">gesloten op woensdag</p>
             </div>
           </div>
 
