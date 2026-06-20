@@ -71,29 +71,29 @@ export function SiteFooter() {
             </li>
           </ul>
         </div>
-      </div>
 
-      <div>
-        <p className="eyebrow text-accent">Bezoek</p>
-        <ul className="mt-4 space-y-2 text-sm text-primary-foreground/80">
-          <li>
-            <a
-              href="https://www.google.com/maps/search/?api=1&query=Dokter+Persoonslaan+13,+2830+Willebroek"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline underline-offset-4 hover:text-accent"
-            >
-              Dokter Persoonslaan 13
-              <br />
-              2830 Willebroek
-            </a>
-          </li>
-          <li>
-            <a href="tel:035010610" className="underline underline-offset-4 hover:text-accent">
-              03 501 06 10
-            </a>
-          </li>
-        </ul>
+        <div>
+          <p className="eyebrow text-accent">Bezoek</p>
+          <ul className="mt-4 space-y-2 text-sm text-primary-foreground/80">
+            <li>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Dokter+Persoonslaan+13,+2830+Willebroek"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline underline-offset-4 hover:text-accent"
+              >
+                Dokter Persoonslaan 13
+                <br />
+                2830 Willebroek
+              </a>
+            </li>
+            <li>
+              <a href="tel:035010610" className="underline underline-offset-4 hover:text-accent">
+                03 501 06 10
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <div className="border-t border-primary-foreground/10">
