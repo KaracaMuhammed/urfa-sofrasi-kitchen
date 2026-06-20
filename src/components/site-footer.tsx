@@ -8,8 +8,7 @@ export function SiteFooter() {
         <div>
           <img src={logoAsset.url} alt="Urfa Sofrası" className="h-12 w-auto" />
           <p className="mt-5 max-w-sm text-sm leading-7 text-primary-foreground/70">
-            Anatolisch vuur, gulle tafels. Pides, lahmacun en grillschotels in een
-            warme, groen-gouden eetzaal.
+            Anatolisch vuur, gulle tafels. Pides, lahmacun en grillschotels in een warme, groen-gouden eetzaal.
           </p>
           <p className="mt-6 font-display text-2xl italic text-accent">
             Hoş geldiniz <span className="text-primary-foreground/60">— welkom.</span>
@@ -26,32 +25,71 @@ export function SiteFooter() {
                 rel="noopener noreferrer"
                 className="underline underline-offset-4 hover:text-accent"
               >
-                Dokter Persoonslaan 13<br />2830 Willebroek
+                Dokter Persoonslaan 13
+                <br />
+                2830 Willebroek
               </a>
             </li>
-            <li><a href="tel:035010610" className="underline underline-offset-4 hover:text-accent">03 501 06 10</a></li>
+            <li>
+              <a href="tel:035010610" className="underline underline-offset-4 hover:text-accent">
+                03 501 06 10
+              </a>
+            </li>
           </ul>
         </div>
 
         <div>
           <p className="eyebrow text-accent">Openingsuren</p>
           <ul className="mt-4 space-y-1.5 text-sm text-primary-foreground/80">
-            <li className="flex justify-between gap-4"><span>Maandag</span><span className="text-primary-foreground/60">11:00–23:00</span></li>
-            <li className="flex justify-between gap-4"><span>Dinsdag</span><span className="text-primary-foreground/60">11:00–23:00</span></li>
-            <li className="flex justify-between gap-4"><span>Woensdag</span><span className="text-primary-foreground/60">Gesloten</span></li>
-            <li className="flex justify-between gap-4"><span>Donderdag</span><span className="text-primary-foreground/60">11:00–23:00</span></li>
-            <li className="flex justify-between gap-4"><span>Vrijdag</span><span className="text-primary-foreground/60">11:00–00:00</span></li>
-            <li className="flex justify-between gap-4"><span>Zaterdag</span><span className="text-primary-foreground/60">11:00–00:00</span></li>
-            <li className="flex justify-between gap-4"><span>Zondag</span><span className="text-primary-foreground/60">14:00–22:00</span></li>
+            <li className="flex justify-between gap-2">
+              <span>Maandag</span>
+              <span className="text-primary-foreground/60">11:00–23:00</span>
+            </li>
+            <li className="flex justify-between gap-2">
+              <span>Dinsdag</span>
+              <span className="text-primary-foreground/60">11:00–23:00</span>
+            </li>
+            <li className="flex justify-between gap-2">
+              <span>Woensdag</span>
+              <span className="text-primary-foreground/60">Gesloten</span>
+            </li>
+            <li className="flex justify-between gap-2">
+              <span>Donderdag</span>
+              <span className="text-primary-foreground/60">11:00–23:00</span>
+            </li>
+            <li className="flex justify-between gap-2">
+              <span>Vrijdag</span>
+              <span className="text-primary-foreground/60">11:00–00:00</span>
+            </li>
+            <li className="flex justify-between gap-2">
+              <span>Zaterdag</span>
+              <span className="text-primary-foreground/60">11:00–00:00</span>
+            </li>
+            <li className="flex justify-between gap-2">
+              <span>Zondag</span>
+              <span className="text-primary-foreground/60">14:00–22:00</span>
+            </li>
           </ul>
         </div>
 
         <div>
           <p className="eyebrow text-accent">Ontdek</p>
           <ul className="mt-4 space-y-2 text-sm text-primary-foreground/80">
-            <li><Link to="/menu" className="hover:text-accent">Menukaart</Link></li>
-            <li><Link to="/about" className="hover:text-accent">Ons verhaal</Link></li>
-            <li><Link to="/contact" className="hover:text-accent">Bestellen</Link></li>
+            <li>
+              <Link to="/menu" className="hover:text-accent">
+                Menukaart
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" className="hover:text-accent">
+                Ons verhaal
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className="hover:text-accent">
+                Bestellen
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
