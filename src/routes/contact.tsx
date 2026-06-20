@@ -52,17 +52,12 @@ function ContactPage() {
               <p className="eyebrow">Adres</p>
               <p className="mt-4 font-display text-2xl text-ink">Urfa Sofrası</p>
               <p className="mt-1 text-muted-foreground">
-                [Straat en huisnummer]<br />
-                [Postcode en plaats]
+                Dokter Persoonslaan 13<br />
+                2830 Willebroek
               </p>
               <p className="mt-6 eyebrow">Contact</p>
               <p className="mt-3 text-ink">
-                <a href="tel:+000000000" className="hover:text-ember">+ — — —</a>
-              </p>
-              <p className="text-ink">
-                <a href="mailto:hello@urfasofrasi.example" className="hover:text-ember">
-                  hello@urfasofrasi.example
-                </a>
+                <a href="tel:035010610" className="hover:text-ember">03 501 06 10</a>
               </p>
             </div>
 
