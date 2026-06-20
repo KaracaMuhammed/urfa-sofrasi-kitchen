@@ -16,26 +16,39 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <p className="eyebrow text-accent">Bezoek</p>
+          {" "}
+          <p className="eyebrow text-accent">Openingsuren</p>{" "}
           <ul className="mt-4 space-y-2 text-sm text-primary-foreground/80">
-            <li>
-              <a
-                href="https://www.google.com/maps/search/?api=1&query=Dokter+Persoonslaan+13,+2830+Willebroek"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline underline-offset-4 hover:text-accent"
-              >
-                Dokter Persoonslaan 13
-                <br />
-                2830 Willebroek
-              </a>
-            </li>
-            <li>
-              <a href="tel:035010610" className="underline underline-offset-4 hover:text-accent">
-                03 501 06 10
-              </a>
-            </li>
-          </ul>
+            {" "}
+            <li className="flex justify-between gap-4">
+              {" "}
+              <span>Maandag</span> <span className="text-primary-foreground/60">11:00–23:00</span>{" "}
+            </li>{" "}
+            <li className="flex justify-between gap-4">
+              {" "}
+              <span>Dinsdag</span> <span className="text-primary-foreground/60">11:00–23:00</span>{" "}
+            </li>{" "}
+            <li className="flex justify-between gap-4">
+              {" "}
+              <span>Woensdag</span> <span className="text-primary-foreground/60">Gesloten</span>{" "}
+            </li>{" "}
+            <li className="flex justify-between gap-4">
+              {" "}
+              <span>Donderdag</span> <span className="text-primary-foreground/60">11:00–23:00</span>{" "}
+            </li>{" "}
+            <li className="flex justify-between gap-4">
+              {" "}
+              <span>Vrijdag</span> <span className="text-primary-foreground/60">11:00–00:00</span>{" "}
+            </li>{" "}
+            <li className="flex justify-between gap-4">
+              {" "}
+              <span>Zaterdag</span> <span className="text-primary-foreground/60">11:00–00:00</span>{" "}
+            </li>{" "}
+            <li className="flex justify-between gap-4">
+              {" "}
+              <span>Zondag</span> <span className="text-primary-foreground/60">14:00–22:00</span>{" "}
+            </li>{" "}
+          </ul>{" "}
         </div>
 
         <div>
@@ -61,22 +74,25 @@ export function SiteFooter() {
       </div>
 
       <div>
-        <p className="eyebrow text-accent">Openingsuren</p>
+        <p className="eyebrow text-accent">Bezoek</p>
         <ul className="mt-4 space-y-2 text-sm text-primary-foreground/80">
-          {[
-            ["Maandag", "11:00–23:00"],
-            ["Dinsdag", "11:00–23:00"],
-            ["Woensdag", "Gesloten"],
-            ["Donderdag", "11:00–23:00"],
-            ["Vrijdag", "11:00–00:00"],
-            ["Zaterdag", "11:00–00:00"],
-            ["Zondag", "14:00–22:00"],
-          ].map(([day, hours]) => (
-            <li key={day} className="flex items-center">
-              <span className="w-24">{day}</span>
-              <span className="text-primary-foreground/60">{hours}</span>
-            </li>
-          ))}
+          <li>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Dokter+Persoonslaan+13,+2830+Willebroek"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-4 hover:text-accent"
+            >
+              Dokter Persoonslaan 13
+              <br />
+              2830 Willebroek
+            </a>
+          </li>
+          <li>
+            <a href="tel:035010610" className="underline underline-offset-4 hover:text-accent">
+              03 501 06 10
+            </a>
+          </li>
         </ul>
       </div>
 
