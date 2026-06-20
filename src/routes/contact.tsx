@@ -9,7 +9,7 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Openingstijden, adres en reservering voor Urfa Sofrası. Elke dag open voor dine-in en afhaal.",
+          "Openingstijden, adres en reservering voor Urfa Sofrası in Willebroek. Dine-in en afhaal.",
       },
       { property: "og:title", content: "Bezoek & reserveren — Urfa Sofrası" },
       { property: "og:url", content: "/contact" },
@@ -20,13 +20,13 @@ export const Route = createFileRoute("/contact")({
 });
 
 const hours = [
-  ["Maandag", "11:30 — 23:00"],
-  ["Dinsdag", "11:30 — 23:00"],
-  ["Woensdag", "11:30 — 23:00"],
-  ["Donderdag", "11:30 — 23:00"],
-  ["Vrijdag", "11:30 — 00:00"],
-  ["Zaterdag", "11:30 — 00:00"],
-  ["Zondag", "12:00 — 22:30"],
+  ["Maandag", "11:00 – 23:00"],
+  ["Dinsdag", "11:00 – 23:00"],
+  ["Woensdag", "Gesloten"],
+  ["Donderdag", "11:00 – 23:00"],
+  ["Vrijdag", "11:00 – 00:00"],
+  ["Zaterdag", "11:00 – 00:00"],
+  ["Zondag", "14:00 – 22:00"],
 ];
 
 function ContactPage() {
@@ -52,17 +52,12 @@ function ContactPage() {
               <p className="eyebrow">Adres</p>
               <p className="mt-4 font-display text-2xl text-ink">Urfa Sofrası</p>
               <p className="mt-1 text-muted-foreground">
-                [Straat en huisnummer]<br />
-                [Postcode en plaats]
+                Dokter Persoonslaan 13<br />
+                2830 Willebroek
               </p>
               <p className="mt-6 eyebrow">Contact</p>
               <p className="mt-3 text-ink">
-                <a href="tel:+000000000" className="hover:text-ember">+ — — —</a>
-              </p>
-              <p className="text-ink">
-                <a href="mailto:hello@urfasofrasi.example" className="hover:text-ember">
-                  hello@urfasofrasi.example
-                </a>
+                <a href="tel:035010610" className="hover:text-ember">03 501 06 10</a>
               </p>
             </div>
 
@@ -85,14 +80,14 @@ function ContactPage() {
               Reserveringen vanaf 4 personen
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-primary-foreground/70">
-              Stuur ons een bericht met datum, tijd en aantal gasten — we
+              Bel ons op <a href="tel:035010610" className="underline hover:text-accent">03 501 06 10</a> of loop binnen — we
               bevestigen binnen enkele uren.
             </p>
             <a
-              href="mailto:hello@urfasofrasi.example?subject=Reservering"
+              href="tel:035010610"
               className="mt-7 inline-flex rounded-full bg-accent px-7 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-accent-foreground transition hover:brightness-110"
             >
-              Tafel aanvragen
+              Bel nu
             </a>
           </div>
         </section>
