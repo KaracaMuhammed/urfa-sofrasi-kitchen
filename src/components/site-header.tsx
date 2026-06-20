@@ -13,15 +13,13 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-border bg-ink/95 backdrop-blur-xl">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-8">
         <Link to="/" className="flex items-center gap-3">
-          <span className="flex h-14 items-center rounded-full bg-background/95 px-4 shadow-panel-soft ring-1 ring-accent/40">
-            <img
-              src={logoAsset.url}
-              alt="Urfa Sofrası"
-              width={885}
-              height={500}
-              className="h-10 w-auto sm:h-11"
-            />
-          </span>
+          <img
+            src={logoAsset.url}
+            alt="Urfa Sofrası"
+            width={885}
+            height={500}
+            className="h-12 w-auto sm:h-14"
+          />
         </Link>
 
         <nav className="hidden items-center gap-8 text-sm font-medium text-primary-foreground/75 md:flex">
