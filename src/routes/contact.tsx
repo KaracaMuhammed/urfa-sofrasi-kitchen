@@ -20,13 +20,13 @@ export const Route = createFileRoute("/contact")({
 });
 
 const hours = [
-  ["Maandag", "11:30 — 23:00"],
-  ["Dinsdag", "11:30 — 23:00"],
-  ["Woensdag", "11:30 — 23:00"],
-  ["Donderdag", "11:30 — 23:00"],
-  ["Vrijdag", "11:30 — 00:00"],
-  ["Zaterdag", "11:30 — 00:00"],
-  ["Zondag", "12:00 — 22:30"],
+  ["Maandag", "11:00 – 23:00"],
+  ["Dinsdag", "11:00 – 23:00"],
+  ["Woensdag", "Gesloten"],
+  ["Donderdag", "11:00 – 23:00"],
+  ["Vrijdag", "11:00 – 00:00"],
+  ["Zaterdag", "11:00 – 00:00"],
+  ["Zondag", "14:00 – 22:00"],
 ];
 
 function ContactPage() {
