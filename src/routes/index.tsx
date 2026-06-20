@@ -65,13 +65,11 @@ function Index() {
             <div className="flex flex-col justify-center animate-rise">
               <p className="eyebrow">Nieuw geopend · Anatolische keuken</p>
               <h1 className="mt-6 font-display text-5xl leading-[1.02] tracking-tight sm:text-6xl lg:text-[5.4rem]">
-                Een warme tafel uit <em className="not-italic text-ember">Urfa</em>,
-                in onze buurt.
+                Een warme tafel uit <em className="not-italic text-ember">Urfa</em>, in onze buurt.
               </h1>
               <p className="mt-7 max-w-xl text-lg leading-8 text-muted-foreground">
-                Houtgebakken pides, krokante lahmacun en izgara —
-                geserveerd zoals het hoort: gul, met de tijd, en iedereen rond
-                de tafel.
+                Houtgebakken pides, krokante lahmacun en izgara — geserveerd zoals het hoort: gul, met de tijd, en
+                iedereen rond de tafel.
               </p>
               <div className="mt-10 flex flex-wrap items-center gap-4">
                 <Link
@@ -91,8 +89,8 @@ function Index() {
               <dl className="mt-12 grid grid-cols-3 gap-6 border-t border-border pt-8 text-sm">
                 <div>
                   <dt className="eyebrow">Open</dt>
-                  <dd className="mt-2 font-display text-2xl text-ink">Di – zo</dd>
-                  <dd className="mt-1 text-xs text-muted-foreground">gesloten op woensdag</dd>
+                  <dd className="mt-2 font-display text-2xl text-ink">Do - Di</dd>
+                  {/* <dd className="mt-1 text-xs text-muted-foreground">gesloten op woensdag</dd> */}
                 </div>
                 <div>
                   <dt className="eyebrow">Stijl</dt>
@@ -113,9 +111,7 @@ function Index() {
                   className="h-full w-full object-cover"
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-hero-overlay p-6">
-                  <p className="font-display text-3xl italic text-accent">
-                    Afiyet olsun.
-                  </p>
+                  <p className="font-display text-3xl italic text-accent">Afiyet olsun.</p>
                   <p className="text-sm text-primary-foreground/80">Eet smakelijk.</p>
                 </div>
               </div>
@@ -133,14 +129,9 @@ function Index() {
             <div className="mb-14 flex flex-wrap items-end justify-between gap-6">
               <div>
                 <p className="eyebrow">De gerechten</p>
-                <h2 className="mt-3 max-w-2xl font-display text-4xl sm:text-5xl">
-                  Drie dingen om eerst te bestellen.
-                </h2>
+                <h2 className="mt-3 max-w-2xl font-display text-4xl sm:text-5xl">Drie dingen om eerst te bestellen.</h2>
               </div>
-              <Link
-                to="/menu"
-                className="text-sm font-semibold uppercase tracking-[0.22em] text-ember hover:text-ink"
-              >
+              <Link to="/menu" className="text-sm font-semibold uppercase tracking-[0.22em] text-ember hover:text-ink">
                 Hele menukaart →
               </Link>
             </div>
@@ -163,9 +154,7 @@ function Index() {
                     <p className="eyebrow">{d.tag}</p>
                     <h3 className="mt-2 font-display text-2xl text-ink">{d.name}</h3>
                     <p className="text-sm italic text-muted-foreground">{d.tr}</p>
-                    <p className="mt-3 text-sm leading-7 text-muted-foreground">
-                      {d.desc}
-                    </p>
+                    <p className="mt-3 text-sm leading-7 text-muted-foreground">{d.desc}</p>
                   </div>
                 </article>
               ))}
@@ -186,13 +175,10 @@ function Index() {
             </div>
             <div>
               <p className="eyebrow">Onze eetzaal</p>
-              <h2 className="mt-3 font-display text-4xl sm:text-5xl">
-                Een eetzaal die meteen vertrouwd voelt.
-              </h2>
+              <h2 className="mt-3 font-display text-4xl sm:text-5xl">Een eetzaal die meteen vertrouwd voelt.</h2>
               <p className="mt-6 text-lg leading-8 text-muted-foreground">
-                Olijfgroene banken, geschilderde muren en patroontextiel — de
-                ruimte draagt de warmte van een Anatolische avond. Kom voor
-                één pide, blijf voor de thee.
+                Olijfgroene banken, geschilderde muren en patroontextiel — de ruimte draagt de warmte van een
+                Anatolische avond. Kom voor één pide, blijf voor de thee.
               </p>
               <Link
                 to="/about"
@@ -208,12 +194,9 @@ function Index() {
         <section className="border-t border-border bg-ink px-5 py-20 text-primary-foreground sm:px-8 lg:py-24">
           <div className="mx-auto flex max-w-5xl flex-col items-center text-center">
             <p className="font-display text-3xl italic text-accent">Buyurun.</p>
-            <h2 className="mt-4 font-display text-4xl sm:text-5xl">
-              Bestel nu — de oven brandt al.
-            </h2>
+            <h2 className="mt-4 font-display text-4xl sm:text-5xl">Bestel nu — de oven brandt al.</h2>
             <p className="mt-5 max-w-xl text-primary-foreground/70">
-              Bestellen is eenvoudig: bel, mail, of loop gewoon binnen. We
-              zorgen dat alles klaarstaat.
+              Bestellen is eenvoudig: bel, mail, of loop gewoon binnen. We zorgen dat alles klaarstaat.
             </p>
             <Link
               to="/contact"
