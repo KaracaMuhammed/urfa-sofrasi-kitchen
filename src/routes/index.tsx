@@ -35,21 +35,21 @@ const dishes = [
     name: "Kaşarlı Pide",
     tr: "Pide met gesmolten kaas",
     desc: "Lange boten gebakken tot de kaas borrelt en de korst knappert.",
-    img: foodPideAsset.url,
+    img: foodPideAsset,
   },
   {
     tag: "Uit de steenoven",
     name: "Lahmacun",
     tr: "Turkse dunne flatbread",
     desc: "Flinterdunne rondjes, gekruid gehakt, peterselie en citroen.",
-    img: foodLahmacunAsset.url,
+    img: foodLahmacunAsset,
   },
   {
     tag: "Voor aan tafel",
     name: "Karışık Plank",
     tr: "Gemengde deelplank",
     desc: "Een gulle plank pide & lahmacun, gemaakt om te delen.",
-    img: foodMixAsset.url,
+    img: foodMixAsset,
   },
 ];
 
