@@ -41,34 +41,20 @@ export function SiteFooter() {
         <div>
           <p className="eyebrow text-accent">Openingsuren</p>
           <ul className="mt-4 space-y-2 text-sm text-primary-foreground/80">
-            <li className="flex justify-between gap-4">
-              <span>Maandag</span>
-              <span className="text-primary-foreground/60">11:00–23:00</span>
-            </li>
-            <li className="flex justify-between gap-4">
-              <span>Dinsdag</span>
-              <span className="text-primary-foreground/60">11:00–23:00</span>
-            </li>
-            <li className="flex justify-between gap-4">
-              <span>Woensdag</span>
-              <span className="text-primary-foreground/60">Gesloten</span>
-            </li>
-            <li className="flex justify-between gap-4">
-              <span>Donderdag</span>
-              <span className="text-primary-foreground/60">11:00–23:00</span>
-            </li>
-            <li className="flex justify-between gap-4">
-              <span>Vrijdag</span>
-              <span className="text-primary-foreground/60">11:00–00:00</span>
-            </li>
-            <li className="flex justify-between gap-4">
-              <span>Zaterdag</span>
-              <span className="text-primary-foreground/60">11:00–00:00</span>
-            </li>
-            <li className="flex justify-between gap-4">
-              <span>Zondag</span>
-              <span className="text-primary-foreground/60">14:00–22:00</span>
-            </li>
+            {[
+              ["Maandag", "11:00–23:00"],
+              ["Dinsdag", "11:00–23:00"],
+              ["Woensdag", "Gesloten"],
+              ["Donderdag", "11:00–23:00"],
+              ["Vrijdag", "11:00–00:00"],
+              ["Zaterdag", "11:00–00:00"],
+              ["Zondag", "14:00–22:00"],
+            ].map(([day, hours]) => (
+              <li key={day} className="flex items-center">
+                <span className="w-24">{day}</span>
+                <span className="text-primary-foreground/60">{hours}</span>
+              </li>
+            ))}
           </ul>
         </div>
 
