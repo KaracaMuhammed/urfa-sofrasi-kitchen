@@ -34,9 +34,16 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <p className="eyebrow text-accent">Open</p>
-          <p className="mt-3 font-display text-2xl text-primary-foreground">Di – zo</p>
-          <p className="mt-0.5 text-sm text-primary-foreground/60">gesloten op woensdag</p>
+          <p className="eyebrow text-accent">Openingsuren</p>
+          <ul className="mt-4 space-y-1.5 text-sm text-primary-foreground/80">
+            <li className="flex justify-between gap-4"><span>Maandag</span><span className="text-primary-foreground/60">11:00–23:00</span></li>
+            <li className="flex justify-between gap-4"><span>Dinsdag</span><span className="text-primary-foreground/60">11:00–23:00</span></li>
+            <li className="flex justify-between gap-4"><span>Woensdag</span><span className="text-primary-foreground/60">Gesloten</span></li>
+            <li className="flex justify-between gap-4"><span>Donderdag</span><span className="text-primary-foreground/60">11:00–23:00</span></li>
+            <li className="flex justify-between gap-4"><span>Vrijdag</span><span className="text-primary-foreground/60">11:00–00:00</span></li>
+            <li className="flex justify-between gap-4"><span>Zaterdag</span><span className="text-primary-foreground/60">11:00–00:00</span></li>
+            <li className="flex justify-between gap-4"><span>Zondag</span><span className="text-primary-foreground/60">14:00–22:00</span></li>
+          </ul>
         </div>
 
         <div>
