@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import logoAsset from "@/assets/urfa-logo.png.asset.json";
 
 const nav = [
-  { to: "/", label: "Thuis" },
+  { to: "/", label: "Home" },
   { to: "/menu", label: "Menukaart" },
   { to: "/about", label: "Verhaal" },
   { to: "/contact", label: "Bezoek" },
@@ -13,13 +13,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-border bg-ink/95 backdrop-blur-xl">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-8">
         <Link to="/" className="flex items-center gap-3">
-          <img
-            src={logoAsset.url}
-            alt="Urfa Sofrası"
-            width={885}
-            height={500}
-            className="h-12 w-auto sm:h-14"
-          />
+          <img src={logoAsset.url} alt="Urfa Sofrası" width={885} height={500} className="h-12 w-auto sm:h-14" />
         </Link>
 
         <nav className="hidden items-center gap-8 text-sm font-medium text-primary-foreground/75 md:flex">
