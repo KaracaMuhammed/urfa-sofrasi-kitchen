@@ -40,7 +40,7 @@ export function SiteHeader() {
           to="/contact"
           className="rounded-full bg-accent px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.22em] text-accent-foreground transition hover:brightness-110"
         >
-          Reserveren
+          Bestellen
         </Link>
       </div>
     </header>

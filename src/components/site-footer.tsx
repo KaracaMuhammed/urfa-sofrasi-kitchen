@@ -30,7 +30,7 @@ export function SiteFooter() {
           <ul className="mt-4 space-y-2 text-sm">
             <li><Link to="/menu" className="hover:text-accent">Menukaart</Link></li>
             <li><Link to="/about" className="hover:text-accent">Ons verhaal</Link></li>
-            <li><Link to="/contact" className="hover:text-accent">Reserveren</Link></li>
+            <li><Link to="/contact" className="hover:text-accent">Bestellen</Link></li>
           </ul>
         </div>
       </div>
