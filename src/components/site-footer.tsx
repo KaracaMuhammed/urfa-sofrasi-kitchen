@@ -4,10 +4,10 @@ import logoAsset from "@/assets/urfa-logo.png.asset.json";
 export function SiteFooter() {
   return (
     <footer className="border-t border-border bg-ink text-primary-foreground">
-      <div className="mx-auto grid max-w-7xl gap-12 px-5 py-14 sm:px-8 md:grid-cols-[1.2fr_1fr_1.2fr_1fr]">
+      <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:px-8 md:grid-cols-[1.5fr_1fr_1fr_1fr] md:gap-12">
         <div>
           <img src={logoAsset.url} alt="Urfa Sofrası" className="h-12 w-auto" />
-          <p className="mt-5 max-w-sm text-sm leading-7 text-primary-foreground/70">
+          <p className="mt-5 max-w-xs text-sm leading-7 text-primary-foreground/70">
             Anatolisch vuur, gulle tafels. Pides, lahmacun en grillschotels in een warme, groen-gouden eetzaal.
           </p>
           <p className="mt-6 font-display text-2xl italic text-accent">
@@ -16,39 +16,37 @@ export function SiteFooter() {
         </div>
 
         <div>
-          {" "}
-          <p className="eyebrow text-accent">Openingsuren</p>{" "}
+          <p className="eyebrow text-accent">Openingsuren</p>
           <ul className="mt-4 space-y-2 text-sm text-primary-foreground/80">
-            {" "}
             <li className="flex justify-between gap-4">
-              {" "}
-              <span>Maandag</span> <span className="text-primary-foreground/60">11:00–23:00</span>{" "}
-            </li>{" "}
+              <span>Maandag</span>
+              <span className="text-primary-foreground/60">11:00–23:00</span>
+            </li>
             <li className="flex justify-between gap-4">
-              {" "}
-              <span>Dinsdag</span> <span className="text-primary-foreground/60">11:00–23:00</span>{" "}
-            </li>{" "}
+              <span>Dinsdag</span>
+              <span className="text-primary-foreground/60">11:00–23:00</span>
+            </li>
             <li className="flex justify-between gap-4">
-              {" "}
-              <span>Woensdag</span> <span className="text-primary-foreground/60">Gesloten</span>{" "}
-            </li>{" "}
+              <span>Woensdag</span>
+              <span className="text-primary-foreground/60">Gesloten</span>
+            </li>
             <li className="flex justify-between gap-4">
-              {" "}
-              <span>Donderdag</span> <span className="text-primary-foreground/60">11:00–23:00</span>{" "}
-            </li>{" "}
+              <span>Donderdag</span>
+              <span className="text-primary-foreground/60">11:00–23:00</span>
+            </li>
             <li className="flex justify-between gap-4">
-              {" "}
-              <span>Vrijdag</span> <span className="text-primary-foreground/60">11:00–00:00</span>{" "}
-            </li>{" "}
+              <span>Vrijdag</span>
+              <span className="text-primary-foreground/60">11:00–00:00</span>
+            </li>
             <li className="flex justify-between gap-4">
-              {" "}
-              <span>Zaterdag</span> <span className="text-primary-foreground/60">11:00–00:00</span>{" "}
-            </li>{" "}
+              <span>Zaterdag</span>
+              <span className="text-primary-foreground/60">11:00–00:00</span>
+            </li>
             <li className="flex justify-between gap-4">
-              {" "}
-              <span>Zondag</span> <span className="text-primary-foreground/60">14:00–22:00</span>{" "}
-            </li>{" "}
-          </ul>{" "}
+              <span>Zondag</span>
+              <span className="text-primary-foreground/60">14:00–22:00</span>
+            </li>
+          </ul>
         </div>
 
         <div>
