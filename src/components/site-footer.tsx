@@ -6,9 +6,7 @@ export function SiteFooter() {
     <footer className="border-t border-border bg-ink text-primary-foreground">
       <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:px-8 md:grid-cols-[1.2fr_1fr_1fr]">
         <div>
-          <span className="inline-flex items-center rounded-full bg-background/95 px-4 py-2 shadow-panel-soft">
-            <img src={logoAsset.url} alt="Urfa Sofrası" className="h-10 w-auto" />
-          </span>
+          <img src={logoAsset.url} alt="Urfa Sofrası" className="h-12 w-auto" />
           <p className="mt-5 max-w-sm text-sm leading-7 text-primary-foreground/70">
             Anatolisch vuur, gulle tafels. Pides, lahmacun en grillschotels in een
             warme, groen-gouden eetzaal.
