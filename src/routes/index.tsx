@@ -1,11 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
-import exteriorAsset from "@/assets/urfa-exterior-new.png.asset.json";
-import interiorAsset from "@/assets/urfa-interior-new.png.asset.json";
-import foodMixAsset from "@/assets/urfa-food-mix.png.asset.json";
-import foodLahmacunAsset from "@/assets/urfa-food-lahmacun.png.asset.json";
-import foodPideAsset from "@/assets/urfa-food-pide.png.asset.json";
+
+import { images } from "@/constants/images";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -22,7 +19,7 @@ export const Route = createFileRoute("/")({
         content: "Pides, lahmacun, izgara. Een warme Anatolische tafel in de buurt.",
       },
       { property: "og:url", content: "/" },
-      { property: "og:image", content: exteriorAsset.url },
+      { property: "og:image", content: images.exterior },
     ],
     links: [{ rel: "canonical", href: "/" }],
   }),
@@ -35,21 +32,21 @@ const dishes = [
     name: "Kaşarlı Pide",
     tr: "Pide met gesmolten kaas",
     desc: "Lange boten gebakken tot de kaas borrelt en de korst knappert.",
-    img: foodPideAsset.url,
+    img: images.foodPide,
   },
   {
     tag: "Uit de steenoven",
     name: "Lahmacun",
     tr: "Turkse dunne flatbread",
     desc: "Flinterdunne rondjes, gekruid gehakt, peterselie en citroen.",
-    img: foodLahmacunAsset.url,
+    img: images.foodLahmacun,
   },
   {
     tag: "Voor aan tafel",
     name: "Karışık Plank",
     tr: "Gemengde deelplank",
     desc: "Een gulle plank pide & lahmacun, gemaakt om te delen.",
-    img: foodMixAsset.url,
+    img: images.foodMix,
   },
 ];
 
@@ -68,8 +65,8 @@ function Index() {
                 Een warme tafel uit <em className="not-italic text-ember">Urfa</em>, in onze buurt.
               </h1>
               <p className="mt-7 max-w-xl text-lg leading-8 text-muted-foreground">
-                Houtgebakken pides, krokante lahmacun en izgara — geserveerd zoals het hoort: gul, met de tijd, en
-                iedereen rond de tafel.
+                Houtgebakken pides, krokante lahmacun en izgara — geserveerd zoals het hoort: gul,
+                met de tijd, en iedereen rond de tafel.
               </p>
               <div className="mt-10 flex flex-wrap items-center gap-4">
                 <Link
@@ -106,7 +103,7 @@ function Index() {
             <div className="relative">
               <div className="relative aspect-[4/5] overflow-hidden rounded-panel shadow-panel">
                 <img
-                  src={exteriorAsset.url}
+                  src={images.exterior}
                   alt="Voorgevel van Urfa Sofrası met verlichte groen-gouden uithangbord"
                   className="h-full w-full object-cover"
                 />
@@ -129,9 +126,14 @@ function Index() {
             <div className="mb-14 flex flex-wrap items-end justify-between gap-6">
               <div>
                 <p className="eyebrow">De gerechten</p>
-                <h2 className="mt-3 max-w-2xl font-display text-4xl sm:text-5xl">Drie dingen om eerst te bestellen.</h2>
+                <h2 className="mt-3 max-w-2xl font-display text-4xl sm:text-5xl">
+                  Drie dingen om eerst te bestellen.
+                </h2>
               </div>
-              <Link to="/menu" className="text-sm font-semibold uppercase tracking-[0.22em] text-ember hover:text-ink">
+              <Link
+                to="/menu"
+                className="text-sm font-semibold uppercase tracking-[0.22em] text-ember hover:text-ink"
+              >
                 Hele menukaart →
               </Link>
             </div>
@@ -167,7 +169,7 @@ function Index() {
           <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
             <div className="overflow-hidden rounded-panel shadow-panel">
               <img
-                src={interiorAsset.url}
+                src={images.interior}
                 alt="Interieur van Urfa Sofrası met houten banken en muurschilderingen"
                 loading="lazy"
                 className="h-full w-full object-cover"
@@ -175,10 +177,12 @@ function Index() {
             </div>
             <div>
               <p className="eyebrow">Onze eetzaal</p>
-              <h2 className="mt-3 font-display text-4xl sm:text-5xl">Een eetzaal die meteen vertrouwd voelt.</h2>
+              <h2 className="mt-3 font-display text-4xl sm:text-5xl">
+                Een eetzaal die meteen vertrouwd voelt.
+              </h2>
               <p className="mt-6 text-lg leading-8 text-muted-foreground">
-                Olijfgroene banken, geschilderde muren en patroontextiel — de ruimte draagt de warmte van een
-                Anatolische avond. Kom voor één pide, blijf voor de thee.
+                Olijfgroene banken, geschilderde muren en patroontextiel — de ruimte draagt de
+                warmte van een Anatolische avond. Kom voor één pide, blijf voor de thee.
               </p>
               <Link
                 to="/about"
@@ -194,9 +198,12 @@ function Index() {
         <section className="border-t border-border bg-ink px-5 py-20 text-primary-foreground sm:px-8 lg:py-24">
           <div className="mx-auto flex max-w-5xl flex-col items-center text-center">
             <p className="font-display text-3xl italic text-accent">Buyurun.</p>
-            <h2 className="mt-4 font-display text-4xl sm:text-5xl">Bestel nu — de oven brandt al.</h2>
+            <h2 className="mt-4 font-display text-4xl sm:text-5xl">
+              Bestel nu — de oven brandt al.
+            </h2>
             <p className="mt-5 max-w-xl text-primary-foreground/70">
-              Bestellen is eenvoudig: bel, mail, of loop gewoon binnen. We zorgen dat alles klaarstaat.
+              Bestellen is eenvoudig: bel, mail, of loop gewoon binnen. We zorgen dat alles
+              klaarstaat.
             </p>
             <Link
               to="/contact"

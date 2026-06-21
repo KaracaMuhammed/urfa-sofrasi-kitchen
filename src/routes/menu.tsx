@@ -2,13 +2,9 @@ import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
-import {
-  Dialog,
-  DialogContent,
-  DialogTitle,
-} from "@/components/ui/dialog";
-import menuPage1 from "@/assets/menu-page-1.png.asset.json";
-import menuPage2 from "@/assets/menu-page-2.png.asset.json";
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
+
+import { images } from "@/constants/images";
 
 export const Route = createFileRoute("/menu")({
   head: () => ({
@@ -22,7 +18,7 @@ export const Route = createFileRoute("/menu")({
       { property: "og:title", content: "Menukaart — Urfa Sofrası" },
       { property: "og:description", content: "Bekijk de volledige menukaart van Urfa Sofrası." },
       { property: "og:url", content: "/menu" },
-      { property: "og:image", content: menuPage1.url },
+      { property: "og:image", content: images.menuPage1 },
     ],
     links: [{ rel: "canonical", href: "/menu" }],
   }),
@@ -37,8 +33,18 @@ const sections: Section[] = [
     title: "Pides",
     tr: "Turkse boten uit de houtoven",
     items: [
-      { name: "Pide met kaas", tr: "Kaşarlı Pide", desc: "Gesmolten kaas, sesamranden", price: "12" },
-      { name: "Pide met gehakt", tr: "Kıymalı Pide", desc: "Gekruid gehakt, peterselie", price: "14" },
+      {
+        name: "Pide met kaas",
+        tr: "Kaşarlı Pide",
+        desc: "Gesmolten kaas, sesamranden",
+        price: "12",
+      },
+      {
+        name: "Pide met gehakt",
+        tr: "Kıymalı Pide",
+        desc: "Gekruid gehakt, peterselie",
+        price: "14",
+      },
       { name: "Pide met sucuk", tr: "Sucuklu Pide", desc: "Turkse sucuk en kaas", price: "14" },
       { name: "Gemengde pide", tr: "Karışık Pide", desc: "Kaas, gehakt, sucuk, ei", price: "16" },
     ],
@@ -47,8 +53,18 @@ const sections: Section[] = [
     title: "Lahmacun",
     tr: "Turkse dunne flatbread",
     items: [
-      { name: "Klassieke lahmacun", tr: "Klasik Lahmacun", desc: "Gehakt, kruiden, paprika", price: "5" },
-      { name: "Pittige lahmacun", tr: "Acılı Lahmacun", desc: "Met chili en extra kruiden", price: "5,5" },
+      {
+        name: "Klassieke lahmacun",
+        tr: "Klasik Lahmacun",
+        desc: "Gehakt, kruiden, paprika",
+        price: "5",
+      },
+      {
+        name: "Pittige lahmacun",
+        tr: "Acılı Lahmacun",
+        desc: "Met chili en extra kruiden",
+        price: "5,5",
+      },
       { name: "Lahmacun menu", tr: "Lahmacun Menü", desc: "Lahmacun, ayran, salade", price: "9" },
     ],
   },
@@ -60,7 +76,12 @@ const sections: Section[] = [
       { name: "Urfa kebab", tr: "Urfa Kebab", desc: "Milde, geurige lamsspies", price: "18" },
       { name: "Kipspies", tr: "Tavuk Şiş", desc: "Gemarineerde kipspiesjes", price: "16" },
       { name: "Kapsalon", desc: "Friet, kebab, kaas, salade", price: "14" },
-      { name: "Gemengde grillplank", tr: "Karışık Izgara", desc: "Voor aan tafel — om te delen", price: "28" },
+      {
+        name: "Gemengde grillplank",
+        tr: "Karışık Izgara",
+        desc: "Voor aan tafel — om te delen",
+        price: "28",
+      },
     ],
   },
   {
@@ -68,10 +89,20 @@ const sections: Section[] = [
     tr: "Tatlı & İçecek",
     items: [
       { name: "Künefe", desc: "Krokante kadayıf, gesmolten kaas, siroop", price: "8" },
-      { name: "Rijstpudding uit de oven", tr: "Fırın Sütlaç", desc: "Ovengebakken rijstpudding", price: "6" },
+      {
+        name: "Rijstpudding uit de oven",
+        tr: "Fırın Sütlaç",
+        desc: "Ovengebakken rijstpudding",
+        price: "6",
+      },
       { name: "Baklava (3 st.)", desc: "Met pistache of walnoot", price: "7" },
       { name: "Ayran", desc: "Huisgemaakte yoghurtdrank", price: "3" },
-      { name: "Turkse koffie", tr: "Türk Kahvesi", desc: "Steengemalen Turkse koffie", price: "3,5" },
+      {
+        name: "Turkse koffie",
+        tr: "Türk Kahvesi",
+        desc: "Steengemalen Turkse koffie",
+        price: "3,5",
+      },
       { name: "Şalgam", desc: "Gefermenteerd raapsap", price: "3,5" },
     ],
   },
@@ -136,20 +167,22 @@ function MenuPage() {
               <p className="eyebrow">Originele kaart</p>
               <h2 className="mt-3 font-display text-4xl">De volledige menukaart.</h2>
               <p className="mx-auto mt-5 max-w-xl text-muted-foreground">
-                Precies zoals hij in het restaurant aan de muur hangt — voor wie
-                het complete plaatje wil zien.
+                Precies zoals hij in het restaurant aan de muur hangt — voor wie het complete
+                plaatje wil zien.
               </p>
             </div>
             <div className="flex flex-col gap-4">
               <figure
                 className="cursor-zoom-in overflow-hidden rounded-panel border border-border shadow-panel"
                 onClick={() => {
-                  setActiveImage(menuPage1.url);
-                  setActiveAlt("Menukaart Urfa Sofrası — pizza's, schotels, kapsalon, frietjes, pasta's, salades en aperitief");
+                  setActiveImage(images.menuPage1);
+                  setActiveAlt(
+                    "Menukaart Urfa Sofrası — pizza's, schotels, kapsalon, frietjes, pasta's, salades en aperitief",
+                  );
                 }}
               >
                 <img
-                  src={menuPage1.url}
+                  src={images.menuPage1}
                   alt="Menukaart Urfa Sofrası — pizza's, schotels, kapsalon, frietjes, pasta's, salades en aperitief"
                   className="w-full"
                 />
@@ -157,12 +190,14 @@ function MenuPage() {
               <figure
                 className="cursor-zoom-in overflow-hidden rounded-panel border border-border shadow-panel"
                 onClick={() => {
-                  setActiveImage(menuPage2.url);
-                  setActiveAlt("Menukaart Urfa Sofrası — pides, lahmacun, kiremit ovenschotels, broodjes/dürüm, dranken en dessert");
+                  setActiveImage(images.menuPage2);
+                  setActiveAlt(
+                    "Menukaart Urfa Sofrası — pides, lahmacun, kiremit ovenschotels, broodjes/dürüm, dranken en dessert",
+                  );
                 }}
               >
                 <img
-                  src={menuPage2.url}
+                  src={images.menuPage2}
                   alt="Menukaart Urfa Sofrası — pides, lahmacun, kiremit ovenschotels, broodjes/dürüm, dranken en dessert"
                   loading="lazy"
                   className="w-full"

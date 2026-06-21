@@ -1,14 +1,16 @@
 import { Link } from "@tanstack/react-router";
-import logoAsset from "@/assets/urfa-logo.png.asset.json";
+
+import { images } from "@/constants/images";
 
 export function SiteFooter() {
   return (
     <footer className="border-t border-border bg-ink text-primary-foreground">
       <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:px-8 md:grid-cols-[1.5fr_1fr_1fr_1fr] md:gap-12">
         <div>
-          <img src={logoAsset.url} alt="Urfa Sofrası" className="h-12 w-auto" />
+          <img src={images.logo} alt="Urfa Sofrası" className="h-12 w-auto" />
           <p className="mt-5 max-w-xs text-sm leading-7 text-primary-foreground/70">
-            Anatolisch vuur, gulle tafels. Pides, lahmacun en grillschotels in een warme, groen-gouden eetzaal.
+            Anatolisch vuur, gulle tafels. Pides, lahmacun en grillschotels in een warme,
+            groen-gouden eetzaal.
           </p>
           <p className="mt-6 font-display text-2xl italic text-accent">
             Hoş geldiniz <span className="text-primary-foreground/60">— welkom.</span>
