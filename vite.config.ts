@@ -10,6 +10,9 @@ export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
     base: "/urfa-sofrasi-kitchen/",
+    spa: {
+      enabled: true,
+    },
   },
 
   vite: {
