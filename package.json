@@ -11,8 +11,8 @@
     "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "build": "vite build",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist/client"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
